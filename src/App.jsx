@@ -2,16 +2,22 @@
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import ListaAlunos from './components/ListaAlunos';
+import ContadorCliques from './components/ContadorCliques';
+import BotoesAcao from './components/BotoesAcao';
+import ListaCards from './components/ListaCards';
 
 function App() {
   return (
     <div>
       <Header />
-      <main>
-        <h2>Boas-vindas, Mário!</h2> {/* Mensagem de boas-vindas com seu nome */}
-        <p>Esta é a sua aplicação de lista de tarefas.</p>
-        <ListaAlunos />
+      <main style={{ padding: '20px' }}>
+        <h2>Boas-vindas, Mário!</h2>
+        <hr />
+        <ContadorCliques />
+        <hr />
+        <BotoesAcao />
+        <hr />
+        <ListaCards />
       </main>
       <Footer />
     </div>
